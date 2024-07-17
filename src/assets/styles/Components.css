@@ -1,0 +1,139 @@
+.profile {
+  display: flex;
+  position: absolute; /* Use absolute positioning within the container */
+  top: 80px; /* Adjust this value to move the element down from the top of the container */
+  right: 300px; /* Adjust this value to move the element away from the right edge of the container */
+  height: 200px;
+  width: 200px; /* Ensure width and height are equal for a circle */
+  background-color: blue;
+  border-radius: 50%; /* Using 50% to make a circle */
+  border: 10px solid white; /* Adjust border size and color as needed */
+  background: url("../images/Profile.png");
+  background-size: cover;
+}
+.header h1 {
+  color: white;
+  filter: drop-shadow(2px 2px 2px black);
+}
+.header p {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.header small {
+  color: white;
+}
+.About p {
+  padding: 0px 50px 0px 50px;
+  text-align: justify;
+}
+/* Show the full text by default on larger screens */
+.About p .read-more {
+  display: none;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  align-content: center;
+  margin: 10px;
+  margin-right: 60px;
+  font-weight: bold;
+  border: 5px solid #ced4da;
+  background: linear-gradient(145deg, #ffffff, #ffffff);
+  box-shadow: 9.91px 9.91px 15px #d9dade;
+}
+.box:active {
+  border-radius: 26px;
+  box-shadow: 21px 21px 42px #c1c1c1, -21px -21px 42px #ffffff;
+}
+.box-depth {
+  width: 700px;
+  height: 400px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 60px;
+  font-weight: bold;
+  border: 5px solid #ced4da;
+  background: linear-gradient(145deg, #ffffff, #ffffff);
+  box-shadow: 9.91px 9.91px 15px #d9dade;
+}
+.boxcontainer {
+  display: flex-box;
+  align-items: center;
+  justify-items: center;
+}
+.front-end {
+  background-image: url("../images/FrontEnd_box.png");
+  background-size: cover;
+}
+.middleware {
+  background-image: url("../images/API.png");
+  background-size: cover;
+}
+.database {
+  background-image: url("../images/DB.png");
+  background-size: cover;
+}
+.box-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  padding-left: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .About p .read-more {
+    display: inline;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .read-more {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .profile {
+    height: 150px; /* Adjust height for smaller screens */
+    width: 150px; /* Adjust width for smaller screens */
+    right: 5%; /* Adjust positioning for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .profile {
+    height: 120px; /* Adjust height for tablets */
+    width: 120px; /* Adjust width for tablets */
+    right: 5%; /* Adjust positioning for tablets */
+    top: 30px; /* Adjust top position for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .profile {
+    height: 90px; /* Adjust height for mobile devices */
+    width: 90px; /* Adjust width for mobile devices */
+    right: 8%; /* Adjust positioning for mobile devices */
+    top: 25px; /* Adjust top position for mobile devices */
+    border: 2px solid white;
+  }
+
+  .header h1 {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+
+  .header p {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  .header small {
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+  }
+  .About h3 {
+    text-align: center;
+  }
+}
+
+
